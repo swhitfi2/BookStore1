@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Welcome Readers</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	
+</head>
+<body>
+<div th:replace="fragments/navbar :: navbar"></div>	
+
+
+
+<div class="container">
+
+<h1>Welcome Readers</h1>
+
+	<p>We are so happy you decided to visit!</p>
+	
+	<p>"Reading is important because it develops the mind. ... Understanding the written word is one way the mind grows in its ability.
+	 Teaching young children to read helps them develop their language skills. 
+	 It also helps them learn to listen."</p> 
+	<!--  <p>Below you will find a list of our readers favorite books!</p>-->
+	
+</div>	
+	
+	<div class="container-fluid">
+
+<div class="container">
+
+  <img src="../images/books1.png" width="250"  height="275" th:src="@{images/books1.png}"/>
+  <img src="../images/books2.png" width="250"  height="275" th:src="@{images/books2.png}"/>
+  <img src="../images/books3.png" width="250"  height="275" th:src="@{images/books3.png}"/>
+  <br>
+
+  <a class= "btn btn-primary" th:href="@{/bookSearch}">View Reader's Favorite</a>
+  
+  
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<div th:replace="fragments/footer :: footer"></div>	
+</body>
+
+
+</html>
